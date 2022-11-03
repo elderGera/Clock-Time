@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eccc68;
+  color: #2f3542;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h2, h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-de {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+#break-length, #session-length {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.in-de button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #57606f;
+  border-radius: 50px;
+}
+
+.break-session-length {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .break-session-length {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+button {
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#break-increment, #session-increment {
+  color: #ffffff;
+  background-color: #3742fa;
+}
+#break-increment:hover, #session-increment:hover{
+  background-color: #ffffff;
+  color: #3742fa;
+}
+#break-decrement, #session-decrement {
+  color: #ffffff;
+  background-color: #70a1ff;
+}
+#break-decrement:hover, #session-decrement:hover{
+  background-color: #ffffff;
+  color: #70a1ff;
+}
+
+.timer {
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-buttons {
+  border: 4px solid #57606f;
+  border-radius: 15px;
+}
+
+#start_stop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  color: #ffffff;
+  background-color: #2ed573;
+}
+#start_stop:hover {
+  background-color: #57606f;
+  color: #2ed573;
+}
+
+#reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  color: #ffffff;
+  background-color: #ff4757;
+}
+#reset:hover {
+  background-color: #57606f;
+  color: #ff4757;
+}
